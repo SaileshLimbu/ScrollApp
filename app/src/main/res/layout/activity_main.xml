@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30dp"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Type and Run"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Make" />
+
+        <EditText
+            android:id="@+id/etMake"
+            style="@style/MyEditText"
+            android:hint="Enter maker"
+            android:inputType="text" />
+
+        <TextView
+            style="@style/MyTextView"
+            android:text="Year" />
+
+        <EditText
+            android:id="@+id/etYear"
+            style="@style/MyEditText"
+            android:hint="Enter year"
+            android:inputType="number" />
+
+        <TextView
+            style="@style/MyTextView"
+            android:text="Color" />
+
+        <EditText
+            android:id="@+id/etColor"
+            style="@style/MyEditText"
+            android:hint="Enter color"
+            android:inputType="text" />
+
+        <TextView
+            style="@style/MyTextView"
+            android:text="Purchase Price ($)" />
+
+        <EditText
+            android:id="@+id/etPrice"
+            style="@style/MyEditText"
+            android:hint="Enter price"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            style="@style/MyTextView"
+            android:text="Engine Size (litre)" />
+
+        <EditText
+            android:id="@+id/etEngineSize"
+            style="@style/MyEditText"
+            android:hint="Enter engine size"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/btnCreateCar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/drawable_button"
+            android:textColor="#FFF"
+            android:textAllCaps="false"
+            android:layout_marginTop="8dp"
+            android:text="Create Car" />
+
+        <TextView
+            android:id="@+id/tvOutput"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="#ddd"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:scrollbars="vertical"
+            android:textColor="#FF5722" />
+    </LinearLayout>
+</ScrollView>
